@@ -6,10 +6,21 @@
 import sys
 import os
 import unittest
+import pytest
 
 sys.path.insert(0, os.path.join(os.path.dirname(__file__), '..', 'src'))
 
-from markview.toc import TocEntry, TableOfContents
+try:
+    import gi
+    gi.require_version('Gtk', '4.0')
+    gi.require_version('Adw', '1')
+    from markview.toc import TocEntry, TableOfContents
+    HAS_GI = True
+except (ImportError, ValueError):
+    HAS_GI = False
+
+if not HAS_GI:
+    pytest.skip("PyGObject / GTK4 / Libadwaita not available in test environment", allow_module_level=True)
 
 
 class TestTocEntry(unittest.TestCase):

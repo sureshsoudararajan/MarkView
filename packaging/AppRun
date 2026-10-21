@@ -1,0 +1,8 @@
+#!/bin/bash
+HERE="$(dirname "$(readlink -f "$0")")"
+export PYTHONPATH="$HERE/usr/lib:$HERE/usr/lib/python3/site-packages:$PYTHONPATH"
+export GI_TYPELIB_PATH="$HERE/usr/lib/girepository-1.0:${GI_TYPELIB_PATH}"
+export LD_LIBRARY_PATH="$HERE/usr/lib:${LD_LIBRARY_PATH}"
+export XDG_DATA_DIRS="$HERE/usr/share:${XDG_DATA_DIRS}"
+export MARKVIEW_DATA_DIR="$HERE/usr/share/markview"
+exec python3 -m markview "$@"

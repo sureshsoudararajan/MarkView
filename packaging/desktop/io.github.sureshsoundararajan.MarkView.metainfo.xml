@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<component type="desktop-application">
+  <id>io.github.sureshsoundararajan.MarkView</id>
+  <metadata_license>CC0-1.0</metadata_license>
+  <project_license>MIT</project_license>
+  <name>MarkView</name>
+  <summary>A powerful, read-only Markdown viewer for Linux with rich GitHub-style rendering</summary>
+
+  <description>
+    <p>
+      MarkView is a high-performance, read-only Markdown viewer designed specifically for Linux desktop environments.
+      Built with GTK 4, Libadwaita, and WebKitGTK 6.0, MarkView delivers authentic GitHub-flavored document rendering
+      within an elegant, GNOME Human Interface Guidelines compliant user interface.
+    </p>
+    <p>
+      By focusing exclusively on reading and reference, MarkView eliminates the risk of inadvertent keystrokes
+      modifying your source documents. Features include:
+    </p>
+    <ul>
+      <li>Fast, hardware-accelerated rendering powered by WebKitGTK 6.0</li>
+      <li>Full GitHub Flavored Markdown (GFM) compatibility: tables, task lists, strikethrough, and GitHub alerts</li>
+      <li>Syntax highlighting for over 100 programming languages using Pygments</li>
+      <li>Mathematical expression rendering with KaTeX (inline and display equations)</li>
+      <li>Declarative diagram and chart visualization using Mermaid.js</li>
+      <li>Multi-layer security model with Bleach HTML sanitization and strict Content Security Policy</li>
+      <li>Interactive Table of Contents / Outline navigation sidebar</li>
+      <li>Automatic live reload upon file change using Linux inotify</li>
+      <li>Seamless adaptive light and dark theme switching matching system preferences</li>
+    </ul>
+  </description>
+
+  <launchable type="desktop-id">io.github.sureshsoundararajan.MarkView.desktop</launchable>
+
+  <screenshots>
+    <screenshot type="default">
+      <caption>MarkView displaying a GitHub-style Markdown document in light mode</caption>
+      <image>https://raw.githubusercontent.com/sureshsoundararajan/MarkView/main/screenshots/markview-light.png</image>
+    </screenshot>
+    <screenshot>
+      <caption>MarkView displaying syntax highlighted code and math in dark mode</caption>
+      <image>https://raw.githubusercontent.com/sureshsoundararajan/MarkView/main/screenshots/markview-dark.png</image>
+    </screenshot>
+    <screenshot>
+      <caption>Document outline and table of contents sidebar navigation</caption>
+      <image>https://raw.githubusercontent.com/sureshsoundararajan/MarkView/main/screenshots/markview-outline.png</image>
+    </screenshot>
+  </screenshots>
+
+  <url type="homepage">https://github.com/sureshsoundararajan/MarkView</url>
+  <url type="bugtracker">https://github.com/sureshsoundararajan/MarkView/issues</url>
+  <url type="vcs-browser">https://github.com/sureshsoundararajan/MarkView</url>
+
+  <categories>
+    <category>Utility</category>
+    <category>Viewer</category>
+  </categories>
+
+  <provides>
+    <mediatype>text/markdown</mediatype>
+    <mediatype>text/x-markdown</mediatype>
+  </provides>
+
+  <content_rating type="oars-1.1" />
+
+  <developer id="io.github.sureshsoundararajan">
+    <name>Suresh Soundararajan</name>
+  </developer>
+
+  <releases>
+    <release version="1.0.0" date="2026-10-21">
+      <description>
+        <p>Initial release of MarkView.</p>
+        <ul>
+          <li>Full support for GitHub Flavored Markdown (GFM)</li>
+          <li>Syntax highlighting for 100+ languages with Pygments</li>
+          <li>Mathematical notation rendering with KaTeX</li>
+          <li>Diagram visualization with Mermaid.js</li>
+          <li>Multi-layer security model with Bleach sanitization</li>
+          <li>Native GTK 4 and Libadwaita interface with light and dark mode support</li>
+          <li>Table of Contents outline sidebar and live file watching</li>
+        </ul>
+      </description>
+    </release>
+  </releases>
+</component>

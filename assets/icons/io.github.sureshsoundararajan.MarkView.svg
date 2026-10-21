@@ -1,0 +1,72 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 128 128" width="128" height="128">
+  <defs>
+    <!-- Modern Blue-Purple Document Gradient (#4A90D9 to #7C5CBF) -->
+    <linearGradient id="docGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#4A90D9" />
+      <stop offset="55%" stop-color="#6174CD" />
+      <stop offset="100%" stop-color="#7C5CBF" />
+    </linearGradient>
+
+    <!-- Top-Right Corner Fold Gradient -->
+    <linearGradient id="foldGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#A8C7F5" />
+      <stop offset="100%" stop-color="#7A58BA" />
+    </linearGradient>
+
+    <!-- Markdown Mark Gradient -->
+    <linearGradient id="markGrad" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#FFFFFF" />
+      <stop offset="100%" stop-color="#F0F4F8" />
+    </linearGradient>
+
+    <!-- GNOME HIG Drop Shadow for Base Plate -->
+    <filter id="docShadow" x="-20%" y="-15%" width="140%" height="145%">
+      <feDropShadow dx="0" dy="6" stdDeviation="5" flood-color="#0f172a" flood-opacity="0.32" />
+      <feDropShadow dx="0" dy="2" stdDeviation="2" flood-color="#0f172a" flood-opacity="0.22" />
+    </filter>
+
+    <!-- Subtle Drop Shadow for Markdown Symbol -->
+    <filter id="markShadow" x="-10%" y="-10%" width="120%" height="125%">
+      <feDropShadow dx="0" dy="1.5" stdDeviation="1" flood-color="#1e1b4b" flood-opacity="0.25" />
+    </filter>
+  </defs>
+
+  <!-- Document Sheet with Rounded Corners & Folded Top-Right Corner -->
+  <g filter="url(#docShadow)">
+    <path d="M 34 12
+             L 84 12
+             L 108 36
+             L 108 102
+             A 14 14 0 0 1 94 116
+             L 34 116
+             A 14 14 0 0 1 20 102
+             L 20 26
+             A 14 14 0 0 1 34 12 Z"
+          fill="url(#docGrad)" />
+
+    <!-- Folded Corner Flap -->
+    <path d="M 84 12
+             L 84 26
+             A 10 10 0 0 0 94 36
+             L 108 36 Z"
+          fill="url(#foldGrad)" />
+  </g>
+
+  <!-- Top Bevel Highlight (GNOME HIG Style) -->
+  <path d="M 34 13 L 84 13" stroke="rgba(255, 255, 255, 0.5)" stroke-width="1.5" stroke-linecap="round" />
+  <path d="M 84 13 L 84 26 A 10 10 0 0 0 94 36 L 108 36" fill="none" stroke="rgba(255, 255, 255, 0.4)" stroke-width="1" />
+  
+  <!-- Left Bevel Highlight -->
+  <path d="M 21 28 L 21 100" stroke="rgba(255, 255, 255, 0.2)" stroke-width="1" stroke-linecap="round" />
+
+  <!-- Bottom Dark Rim Shadow -->
+  <path d="M 34 115 L 94 115" stroke="rgba(0, 0, 0, 0.22)" stroke-width="1.5" stroke-linecap="round" />
+
+  <!-- Markdown Symbol (Centered on Page) -->
+  <g transform="matrix(0.46 0 0 0.46 16.16 34.56)" fill="url(#markGrad)" filter="url(#markShadow)">
+    <!-- Bold 'M' Glyph -->
+    <path d="M 30,98 L 30,30 L 52,30 L 68,52 L 84,30 L 106,30 L 106,98 L 86,98 L 86,58 L 73,75 L 63,75 L 50,58 L 50,98 Z" />
+    <!-- Downward Arrow Glyph -->
+    <path d="M 140,30 L 162,30 L 162,65 L 178,65 L 151,98 L 124,65 L 140,65 Z" />
+  </g>
+</svg>

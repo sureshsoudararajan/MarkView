@@ -1,0 +1,12 @@
+[Desktop Entry]
+Type=Application
+Name=MarkView
+GenericName=Markdown Viewer
+Comment=A powerful, read-only Markdown viewer for Linux with rich GitHub-style rendering
+Exec=markview %f
+Icon=io.github.sureshsoundararajan.MarkView
+Categories=Utility;Viewer;
+MimeType=text/markdown;text/x-markdown;
+Terminal=false
+StartupNotify=true
+Keywords=markdown;viewer;document;reader;

@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 128 128" width="128" height="128">
+  <defs>
+    <!-- Background Gradient -->
+    <linearGradient id="bg-grad" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#3584e4"/>
+      <stop offset="100%" stop-color="#1c71d8"/>
+    </linearGradient>
+
+    <!-- Document Plate Gradient -->
+    <linearGradient id="doc-grad" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#ffffff"/>
+      <stop offset="100%" stop-color="#f6f8fa"/>
+    </linearGradient>
+
+    <!-- Drop Shadow Filter -->
+    <filter id="shadow" x="-10%" y="-10%" width="120%" height="125%" filterUnits="userSpaceOnUse">
+      <feDropShadow dx="0" dy="4" stdDeviation="4" flood-color="#000000" flood-opacity="0.25"/>
+    </filter>
+  </defs>
+
+  <!-- App Icon Base Plate -->
+  <rect x="12" y="12" width="104" height="104" rx="24" fill="url(#bg-grad)" filter="url(#shadow)"/>
+
+  <!-- Inner Document Sheet -->
+  <rect x="24" y="24" width="80" height="80" rx="12" fill="url(#doc-grad)"/>
+
+  <!-- Markdown "M" glyph -->
+  <path d="M 36,44 L 36,76 L 44,76 L 44,56 L 50,68 L 54,68 L 60,56 L 60,76 L 68,76 L 68,44 L 58,44 L 52,58 L 46,44 Z"
+        fill="#1c71d8"/>
+
+  <!-- Markdown Downward Arrow glyph -->
+  <path d="M 80,44 L 80,64 L 74,64 L 84,76 L 94,64 L 88,64 L 88,44 Z"
+        fill="#3584e4"/>
+
+  <!-- Subtle bottom highlight line -->
+  <rect x="36" y="84" width="56" height="4" rx="2" fill="#99c1f1"/>
+</svg>

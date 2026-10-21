@@ -49,15 +49,16 @@ MarkView is designed exclusively for **reading, reviewing, and reference**:
 
 ## Screenshots
 
-<!-- Screenshot Placeholders -->
 <div align="center">
-  <p><em>MarkView in Light Mode (GitHub Theme)</em></p>
-  <img src="https://raw.githubusercontent.com/sureshsoundararajan/MarkView/main/screenshots/markview-light.png" alt="MarkView Light Theme Preview" width="750" />
+  <p><strong>MarkView in Light Mode (GitHub Theme)</strong></p>
+  <img src="screenshots/light.png" alt="MarkView Light Theme Preview" width="850" />
 </div>
 
+<br/>
+
 <div align="center">
-  <p><em>MarkView in Dark Mode with KaTeX Math & Outline Sidebar</em></p>
-  <img src="https://raw.githubusercontent.com/sureshsoundararajan/MarkView/main/screenshots/markview-dark.png" alt="MarkView Dark Theme Preview" width="750" />
+  <p><strong>MarkView in Dark Mode with KaTeX Math & Outline Sidebar</strong></p>
+  <img src="screenshots/dark.png" alt="MarkView Dark Theme Preview" width="850" />
 </div>
 
 ---
